@@ -6,18 +6,16 @@ import jsonpickle
 import json
 
 logger = logging.getLogger()
+logger.setLevel(logging.INFO)
 function = __import__('lambda_function')
 handler = function.lambda_handler
 
 class TestFunction(unittest.TestCase):
-
   def test_function(self):
     file = open('event.json', 'rb')
     try:
       ba = bytearray(file.read())
       event = jsonpickle.decode(ba)
-      logger.warning('## EVENT')
-      logger.warning(jsonpickle.encode(event))
       context = {'requestid' : '1234'}
       result = handler(event, context)
       print(str(result))

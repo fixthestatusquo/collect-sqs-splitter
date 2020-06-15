@@ -2,7 +2,7 @@
 set -u
 set -e
 
-if [ $# -gt 0 -a "$1" = "-u" ]; then
+if [ "$#" -gt 0 -a "${1:-}" = "-u" ]; then
     mode=up
 else
     mode=all
