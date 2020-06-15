@@ -19,7 +19,6 @@ def lambda_handler(event, context):
 
     for rec in event['Records']:
         action_type = attribute(rec, 'ActionType')
-        logger.info("message attributes={}".format(rec['messageAttributes']))
         logger.info("Action type is {} (DOWNLOAD_ACTION_TYPE={})".format(action_type, os.environ.get('DOWNLOAD_ACTION_TYPE', 'download')))
         if action_type == os.environ.get('DOWNLOAD_ACTION_TYPE', 'download'):
             sqs.send_message(QueueUrl=queue['thankyou'], DelaySeconds=30, MessageBody=rec['body'])
@@ -30,7 +29,7 @@ def lambda_handler(event, context):
 
 
 def attribute(rec, an):
-    rec['messageAttributes'][an]['stringValue']
+    return rec['messageAttributes'][an]['stringValue']
 
 def get_queues():
     try:
