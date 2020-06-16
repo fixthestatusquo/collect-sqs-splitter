@@ -11,8 +11,8 @@ fi
 PKG=$(basename $PWD).zip
 
 if [ $mode = all ]; then
-pipenv lock -r  > src/requirements.txt
-pip3 install --upgrade --target deps/ -r src/requirements.txt
+pipenv lock -r  > requirements.txt
+pip3 install --upgrade --target deps/ -r requirements.txt
 ( cd deps; zip -r9 ../$PKG .)
 fi
 
