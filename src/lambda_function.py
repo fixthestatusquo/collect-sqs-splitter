@@ -2,6 +2,11 @@ import os
 import logging
 import jsonpickle
 import boto3
+import sentry_sdk
+
+
+if 'SENTRY_DSN' in os.environ:
+    sentry_sdk.init(os.environ['SENTRY_DSN'])
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
