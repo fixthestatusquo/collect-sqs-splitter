@@ -3,10 +3,10 @@ import logging
 import jsonpickle
 import boto3
 import sentry_sdk
-
+from sentry_sdk.integrations.aws_lambda import AwsLambdaIntegration
 
 if 'SENTRY_DSN' in os.environ:
-    sentry_sdk.init(os.environ['SENTRY_DSN'])
+    sentry_sdk.init(os.environ['SENTRY_DSN'], integrations=[AwsLambdaIntegration()])
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
