@@ -1,0 +1,46 @@
+{
+    "Records": [
+        {
+            "messageId": "57c49ee0-f430-4a4d-91a0-194ce77dfc86",
+            "receiptHandle": "AQEBLVYsXltlXdLtMpmxsPyAwUFibAfAiYgYtA70LVP0G8MWxxfiWxkj+/qsQ3tvzOCbEX0UeI+lCJgwnzR7JRpv0bQIe4Bo8soDwTvIVXAGOrEQoYfC3rNJNUJQQRsm76ykit3bxBVlBdoTddtTUnkeDaZ7gIoIksqsxzFZg4e4EmnwHx4lj+wJGPqqMo0cq3r8Ig68Gy9yHh3wLO8SkswD4n2ag6Nr5FEmsBF3fhFkujen42g/f3YsjEo8JVdAdW1/zxZtA4f/afBxLhxYeWdTugxXkg/uTEK3vYAeSe8qFifREWeItn63V4K+FaucDKWvF6QkuSe1Cuhhf/cR+D6wYGAn5IbRBPO7OF00bpias2sFpT605y6bchNqIlbZDTeldlXVsKFTLaTfAJ/woNbVOA==",
+            "body": "{\"action\":{\"actionType\":\"signup\",\"createdAt\":\"2020-06-10T20:48:30\",\"fields\":{\"postcardUrl\":\"https://pepe\"}},\"actionId\":65,\"actionPage\":{\"locale\":\"en\",\"thankYouTemplateRef\":null,\"url\":\"https://campax.org/1\"},\"actionPageId\":4,\"campaign\":{\"name\":\"r1\"},\"campaignId\":3,\"contact\":{\"email\":\"dump+test2@cahoots.pl\",\"firstName\":\"Mee\",\"payload\":\"eyJiaXJ0aF9kYXRlIjoiMTk5MC0xMC0xMiIsImVtYWlsIjoiZHVtcCt0ZXN0MkBjYWhvb3RzLnBsIiwiZmlyc3RfbmFtZSI6Ik1lZSIsImxhc3RfbmFtZSI6IkJhY2hlbGkiLCJsb2NhbGl0eSI6IlZpc3NheSIsInBvc3Rjb2RlIjoiMTIzNCIsInJlZ2lvbiI6IkNhbnRvbjEifQ\",\"ref\":\"GiYjjcsLwOBSdBvNEYMk6TLRe8b1-eYPNJuwD2eT8sA\"},\"orgId\":3,\"privacy\":{\"communication\":true,\"givenAt\":\"2020-06-10T20:48:30Z\"},\"schema\":\"proca:action:1\",\"source\":null,\"stage\":\"deliver\"}",
+            "attributes": {
+                "ApproximateReceiveCount": "1",
+                "SentTimestamp": "1591822111757",
+                "SenderId": "AIDA4V2VUGUCTFMWC5XCS",
+                "ApproximateFirstReceiveTimestamp": "1591822111762"
+            },
+            "messageAttributes": {
+                "Schema": {
+                    "stringValue": "proca:action:1",
+                    "stringListValues": [],
+                    "binaryListValues": [],
+                    "dataType": "String"
+                },
+                "CampaignName": {
+                    "stringValue": "r1",
+                    "stringListValues": [],
+                    "binaryListValues": [],
+                    "dataType": "String"
+                },
+                "Stage": {
+                    "stringValue": "deliver",
+                    "stringListValues": [],
+                    "binaryListValues": [],
+                    "dataType": "String"
+                },
+                "ActionType": {
+                    "stringValue": "download",
+                    "stringListValues": [],
+                    "binaryListValues": [],
+                    "dataType": "String"
+                }
+            },
+            "md5OfMessageAttributes": "8537a29282c658a85377488585005fa0",
+            "md5OfBody": "c770c9549e772fe5cb045ee6d78deab6",
+            "eventSource": "aws:sqs",
+            "eventSourceARN": "arn:aws:sqs:eu-central-1:871521072389:proca_delivery",
+            "awsRegion": "eu-central-1"
+        }
+    ]
+}
